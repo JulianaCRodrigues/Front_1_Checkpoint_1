@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Nunito+Sans:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans';
+    background-color: black;
+    color: aliceblue;
+  }
+
+  header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: .625rem;
+  }
+
+  .logo h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 244, 36);
+    font-size: 6.25rem;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+
+.logo span {
+    color: rgb(155, 5, 5);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin-right: .625rem;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+.list a {
+    color: aliceblue;
+    text-decoration: none;
+ 
+}
+
+.banner {
+    width: 100%;
+    height: 37.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/banner.jpeg)
+}
+
+.banner h1 {
+    font-size: 9.375rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.banner h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 18.75rem;
+
+}
+
+.sinopse{
+    margin: .625rem .625rem .625rem .625rem;
+    text-align: justify;
+}
+   
+.sinopse h2{
+    text-align: center;
+    color:rgb(155, 5, 5);
+}
+
+.main h2 {
+    font-size: 3.125rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.card {
+    width: 18.75rem;
+    height: 31.25rem;
+    text-align: justify;
+    box-shadow: 0 0 1.25rem 0;
+    padding: .3125rem  .3125rem .3125rem .3125rem;  
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    margin-bottom: 1.25rem
+}
+
+
+.card h4 {
+    margin-top: .3125rem;
+    margin-bottom: .3125rem;
+    text-align: center;
+}
+
+.card-text button {
+    margin-left: 6.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-text3 button {
+    margin-left: 6.875rem;
+    margin-top: 1.25rem;
+}
+
+.bnt-card a {
+    border-style: none;
+    border-radius: .3125rem;
+    border: .0625rem solid whitesmoke;
+    width: 5rem;
+    height: 1.25rem;
+    background-color: black;
+    color:whitesmoke;
+  
+}
+
+.video { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6.25rem;
+    gap: 1.25rem;
+}
+
+footer {
+    width: 100%;
+    height: 18.75rem;
+}
+
+footer h3{
+    text-align: center;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    font-size: 3.125rem;
+
+}
+.contato {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.lk {
+    width: 5rem;
+}
+
+.git {
+    width: 8.125rem;
+}
+
+
+@media (max-width:768px) {
+
+   header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+   }
+   
+    .video {
+        margin-top: 1.35rem;
+    }
+
+    .video iframe {
+        width: 90%;
+        height: 400px;
+    }
+
+    footer {
+        height: 22rem;
+    }
+
+    .contato { 
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;;
+    }
+    .contato {
+        height: fit-content;
+    }
+}
+
+
+@media (max-width:425px) {
+    header {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+.menu nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+      .logo{
+        width: fit-content;
+     }
+}
